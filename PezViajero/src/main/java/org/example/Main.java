@@ -17,7 +17,7 @@ public class Main {
         ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         ventana.setVisible(true);
 
-        panel.aparecerPez(); // ← agrega esto para probar
+       
 
         ServidorPez servidor = new ServidorPez(panel);
         servidor.start();

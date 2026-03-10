@@ -8,7 +8,8 @@ public class PezAnimacion extends JPanel {
     int y = 150;
     boolean activo = false;
 
-    String siguienteIP = "192.168.1.20";
+    String siguienteIP = "192.168.112.36";
+
 
     public PezAnimacion(){
 
