@@ -28,7 +28,7 @@ public class PezAnimacion extends JPanel {
 
             x += 5;
 
-            if(x > 550){
+            if(x > getWidth()){
                 activo = false;
                 ClientePez.enviar(siguienteIP);
             }
