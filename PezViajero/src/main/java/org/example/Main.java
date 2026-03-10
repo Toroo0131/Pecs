@@ -1,17 +1,25 @@
+
 package org.example;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    static void main() {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        IO.println(String.format("Hello and welcome!"));
+import javax.swing.JFrame;
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            IO.println("i = " + i);
-        }
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        JFrame ventana = new JFrame("Pez en Red");
+
+        PezAnimacion panel = new PezAnimacion();
+
+        ventana.add(panel);
+        ventana.setSize(600,400);
+        ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        ventana.setVisible(true);
+
+        panel.aparecerPez(); // ← agrega esto para probar
+
+        ServidorPez servidor = new ServidorPez(panel);
+        servidor.start();
     }
 }
