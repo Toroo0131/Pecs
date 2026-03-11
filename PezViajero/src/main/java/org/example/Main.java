@@ -6,8 +6,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int miPuerto = 5000;
-        int puertoDestino = 5001;
+        int miPuerto = 5001;
+        int puertoDestino = 5000;
 
         JFrame ventana = new JFrame("Pez en Red");
 
