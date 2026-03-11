@@ -5,11 +5,11 @@ import java.io.PrintWriter;
 
 public class ClientePez {
 
-    public static void enviar(String ip){
+    public static void enviar(String ip, int puerto){
 
         try{
 
-            Socket socket = new Socket(ip,5000);
+            Socket socket = new Socket(ip, puerto);
 
             PrintWriter salida = new PrintWriter(socket.getOutputStream(),true);
 
